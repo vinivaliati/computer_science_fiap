@@ -1,1 +1,11 @@
-daniel
+temp_interna = 30
+
+temp_externa = -15
+
+integridade = 1
+
+energia = 100
+
+pressao = 4
+
+modulos = "OK"

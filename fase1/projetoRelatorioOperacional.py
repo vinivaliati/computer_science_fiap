@@ -1,10 +1,12 @@
+print("--- SISTEMA DE PRÉ-LANÇAMENTO ---")
+
 # Dados
-temp_interna = 30
-temp_externa = -15
-integridade = 1
-energia = 100
-pressao = 4
-modulos = "OK"
+temp_interna = float(input("Digite a temperatura interna (°C): "))
+temp_externa = -float(input("Digite a temperatura externa (°C): "))
+integridade = int(input("Integridade do casco (1 para OK, 0 para Falha): "))
+energia = float(input("Nível de energia atual (0 a 100%): "))
+pressao = float(input("Pressão atmosférica (atm): "))
+modulos = input("Status dos módulos (Digite 'OK' ou 'ERRO'): ")
 
 # Verificacao
 if (
