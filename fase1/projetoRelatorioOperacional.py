@@ -1,3 +1,11 @@
+# DADOS DA NAVE AURORA SIGER
+# temp_interna: 30
+# temp_interna: -15
+# integridade: 1 para OK e 0 para Falha
+# energia: 0 a 100%
+# pressao: 3 and 5
+# modulos: OK ou ERRO
+
 print("--- SISTEMA DE PRÉ-LANÇAMENTO ---")
 
 # Dados
