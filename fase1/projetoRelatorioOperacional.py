@@ -14,7 +14,7 @@ temp_externa = -float(input("Digite a temperatura externa (°C): "))
 integridade = int(input("Integridade do casco (1 para OK, 0 para Falha): "))
 energia = float(input("Nível de energia atual (0 a 100%): "))
 pressao = float(input("Pressão atmosférica (atm): "))
-modulos = input("Status dos módulos (Digite 'OK' ou 'ERRO'): ")
+modulos = "OK"
 
 # Verificacao
 if (
