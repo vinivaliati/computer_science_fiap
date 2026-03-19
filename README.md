@@ -1,10 +1,10 @@
-# 🚀 computer_science_fiap
+# computer_science_fiap
 
 > Repositório do grupo contendo os projetos desenvolvidos ao longo do curso de Ciência da Computação na FIAP.
 
 ---
 
-## 👥 Integrantes
+## Integrantes
 
 | Nome |
 |------|
@@ -16,7 +16,7 @@
 
 ---
 
-## 🛠️ Tecnologias Utilizadas
+## Tecnologias Utilizadas
 
 ![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white)
 ![NumPy](https://img.shields.io/badge/NumPy-013243?style=flat&logo=numpy&logoColor=white)
@@ -26,30 +26,35 @@
 
 ---
 
-## 📁 Estrutura do Repositório
+## Estrutura do Repositório
 
 ```
 computer_science_fiap/
-├── fase-1/
-├── fase-2/
-├── fase-3/
-├── fase-4/
-├── fase-5/
-├── fase-6/
-└── fase-7/
+├── fase1/
+│   ├── codes/
+│   ├── referencias/
+│   └── relatorio/
+├── fase2/
+├── fase3/
+├── fase4/
+├── fase5/
+├── fase6/
+└── fase7/
 ```
 
 ---
 
-## 📚 Fases
+## Fases
 
 ### ✅ Fase 1 — Decolagem da Missão
+
+[Acessar README da Fase 1](./fase1/README.md)
+[Acessar Relatorio da Fase 1](./fase1/Relatorio/aurora_siger.md)
 
 Análise de **1000 leituras de telemetria** do sistema pré-decolagem da espaçonave **Aurora Siger**, validando parâmetros operacionais como temperatura, integridade estrutural, níveis de energia, pressão dos tanques e status dos módulos críticos. O projeto inclui algoritmo de verificação com classificação de status, análise energética e visualizações dos resultados.
 
 ![results](fase1/Referencias/img/results.png)
 
-📄 [Acessar README da Fase 1](./fase1/README.md)
 
 ---
 
@@ -96,5 +101,5 @@ Análise de **1000 leituras de telemetria** do sistema pré-decolagem da espaço
 ---
 
 <p align="center">
-  Desenvolvido com 💙 pelo grupo — FIAP • Ciência da Computação
+  FIAP • Ciência da Computação
 </p>
