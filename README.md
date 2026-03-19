@@ -1,4 +1,4 @@
-# computer_science_fiap
+# 🚀 computer_science_fiap
 
 > Repositório do grupo contendo os projetos desenvolvidos ao longo do curso de Ciência da Computação na FIAP.
 
@@ -18,7 +18,11 @@
 
 ## 🛠️ Tecnologias Utilizadas
 
-> *(Atualize conforme as tecnologias forem sendo adicionadas ao longo do curso)*
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white)
+![NumPy](https://img.shields.io/badge/NumPy-013243?style=flat&logo=numpy&logoColor=white)
+![Pandas](https://img.shields.io/badge/Pandas-150458?style=flat&logo=pandas&logoColor=white)
+![Matplotlib](https://img.shields.io/badge/Matplotlib-11557c?style=flat)
+![Seaborn](https://img.shields.io/badge/Seaborn-4c72b0?style=flat)
 
 ---
 
@@ -37,10 +41,13 @@ computer_science_fiap/
 
 ---
 
-## Fases
+## 📚 Fases
 
-### Fase 1 — Decolagem da Missão
-Primeira fase do curso, marcando o início da jornada acadêmica do grupo. Os projetos desta fase estabelecem a base do aprendizado e apresentam os primeiros desafios práticos da formação em Ciência da Computação.
+### ✅ Fase 1 — Decolagem da Missão
+
+Análise de **1000 leituras de telemetria** do sistema pré-decolagem da espaçonave **Aurora Siger**, validando parâmetros operacionais como temperatura, integridade estrutural, níveis de energia, pressão dos tanques e status dos módulos críticos. O projeto inclui algoritmo de verificação com classificação de status, análise energética e visualizações dos resultados.
+
+![results](fase1/Referencias/img/results.png)
 
 📄 [Acessar README da Fase 1](./fase1/README.md)
 
@@ -49,45 +56,45 @@ Primeira fase do curso, marcando o início da jornada acadêmica do grupo. Os pr
 ### 🚧 Fase 2 — *Em breve*
 *(WIP)*
 
-📄 [Acessar README da Fase 2](./fase2/README.md)
+📄 [Acessar README da Fase 2](./fase-2/README.md)
 
 ---
 
 ### 🚧 Fase 3 — *Em breve*
 *(WIP)*
 
-📄 [Acessar README da Fase 3](./fase3/README.md)
+📄 [Acessar README da Fase 3](./fase-3/README.md)
 
 ---
 
 ### 🚧 Fase 4 — *Em breve*
 *(WIP)*
 
-📄 [Acessar README da Fase 4](./fase4/README.md)
+📄 [Acessar README da Fase 4](./fase-4/README.md)
 
 ---
 
 ### 🚧 Fase 5 — *Em breve*
 *(WIP)*
 
-📄 [Acessar README da Fase 5](./fase5/README.md)
+📄 [Acessar README da Fase 5](./fase-5/README.md)
 
 ---
 
 ### 🚧 Fase 6 — *Em breve*
 *(WIP)*
 
-📄 [Acessar README da Fase 6](./fase6/README.md)
+📄 [Acessar README da Fase 6](./fase-6/README.md)
 
 ---
 
 ### 🚧 Fase 7 — *Em breve*
 *(WIP)*
 
-📄 [Acessar README da Fase 7](./fase7/README.md)
+📄 [Acessar README da Fase 7](./fase-7/README.md)
 
 ---
 
 <p align="center">
-  FIAP • Ciência da Computação
+  Desenvolvido com 💙 pelo grupo — FIAP • Ciência da Computação
 </p>
