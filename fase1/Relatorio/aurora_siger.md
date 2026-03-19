@@ -52,7 +52,7 @@ CASO CONTRÁRIO                  → PRONTO PARA DECOLAR
 
 ---
 
-## ⚡ Análise Energética
+## Análise Energética
 
 ### Dados utilizados
 
