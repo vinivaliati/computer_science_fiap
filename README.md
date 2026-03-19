@@ -33,7 +33,8 @@ computer_science_fiap/
 ├── fase1/
 │   ├── codes/
 │   ├── referencias/
-│   └── relatorio/
+│   ├── relatorio.pdf
+│   └── requirements.txt
 ├── fase2/
 ├── fase3/
 ├── fase4/

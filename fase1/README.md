@@ -8,9 +8,10 @@ Análise de N leituras de telemetria do sistema pré-decolagem da espaçonave Au
 
 ```
 fase1/
-├── codes/        # código de cada integrante
-├── referencias/  # arquivos, exemplos e imagens de referência
-└── relatorio/    # relatório final em PDF
+├── codes/           # código de cada integrante
+├── referencias/     # arquivos, exemplos e imagens de referência
+├── relatorio.pdf    # relatório final
+└── requirements.txt
 ```
 
 ---
