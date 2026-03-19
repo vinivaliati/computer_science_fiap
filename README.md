@@ -49,6 +49,7 @@ computer_science_fiap/
 ### ✅ Fase 1 — Decolagem da Missão
 
 [Acessar README da Fase 1](./fase1/README.md)
+
 [Acessar Relatorio da Fase 1](./fase1/Relatorio/aurora_siger.md)
 
 Análise de **1000 leituras de telemetria** do sistema pré-decolagem da espaçonave **Aurora Siger**, validando parâmetros operacionais como temperatura, integridade estrutural, níveis de energia, pressão dos tanques e status dos módulos críticos. O projeto inclui algoritmo de verificação com classificação de status, análise energética e visualizações dos resultados.
