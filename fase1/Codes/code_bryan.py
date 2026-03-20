@@ -2,6 +2,7 @@
 # Projeto Aurora Siger
 # Relatório de Pré Decolagem
 
+import os
 
 # entrada de dados
 
@@ -98,6 +99,7 @@ def analise_ia(dados):
 # sistema principal
 
 def main():
+    os.system('cls')
     print(".✦ ݁˖ SISTEMA AURORA SIGER INICIADO... .✦ ݁˖")
 
     dados = coletar_dados()
