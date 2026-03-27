@@ -24,6 +24,7 @@
 ![Pandas](https://img.shields.io/badge/Pandas-150458?style=flat&logo=pandas&logoColor=white)
 ![Matplotlib](https://img.shields.io/badge/Matplotlib-11557c?style=flat)
 ![Seaborn](https://img.shields.io/badge/Seaborn-4c72b0?style=flat)
+![scikit-learn](https://img.shields.io/badge/scikit--learn-f7931e?style=flat)
 
 ---
 
