@@ -53,7 +53,7 @@ computer_science_fiap/
 
 [Acessar Relatorio da Fase 1](./fase1/relatorio.pdf)
 
-Análise de **1000 leituras de telemetria** do sistema pré-decolagem da espaçonave **Aurora Siger**, validando parâmetros operacionais como temperatura, integridade estrutural, níveis de energia, pressão dos tanques e status dos módulos críticos. O projeto inclui algoritmo de verificação com classificação de status, análise energética e visualizações dos resultados.
+Análise de **10000 leituras de telemetria** do sistema pré-decolagem da espaçonave **Aurora Siger**, validando parâmetros operacionais como temperatura, integridade estrutural, níveis de energia, pressão dos tanques e status dos módulos críticos. O projeto inclui algoritmo de verificação com classificação de status, análise energética e visualizações dos resultados.
 
 ![results](fase1/Referencias/img/results.png)
 
