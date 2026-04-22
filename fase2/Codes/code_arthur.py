@@ -35,7 +35,7 @@ def autorizar(av, pista_livre):
     elif AND(OR(medica, prior1), pista_livre):
         return True, "Carga medica / Prioridade maxima"
     elif NOT(pista_livre):
-        return False, "Pista ocupada"
+        return False, "ditch/pista ocupada"
     elif av["comb"] >  30 and av["prior"] > 2:
         return False, "Aguardar na fila"
     else:
