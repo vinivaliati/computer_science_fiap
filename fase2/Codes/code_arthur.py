@@ -3,7 +3,7 @@ MGPEB - Modulo De Gerenciamento de Pousos
 """
 
 # Estruturas Lineares, Lista Geral, Fila de espera e pilha de emergencia
-espaconave  =  [] 
+espaconave =  [] 
 fila       =  []
 emergencia =  []
 
