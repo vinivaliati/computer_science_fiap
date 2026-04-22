@@ -36,3 +36,56 @@ def autorizar(av, pista_livre):
         return True, "Carga medica / Prioridade maxima"
     elif NOT(pista_livre):
         return False, "Pista ocupada"
+    elif av["comb"] >  30 and av["prior"] > 2:
+        return False, "Aguardar na fila"
+    else:
+        return True, "Condicoes normais"
+    
+
+# Busca Linear
+def buscar_tipo(tipo):
+    """Retorna todas as espaconaves de um determinado tipo de carga"""
+    return [av for av in espaconave if av["tipo"] == tipo]
+
+def menor_combustivel():
+    """Retorna a espaconave com menos combustivel (mais critica)"""
+    return min(espaconave, key=lambda av: av["comb"])
+
+
+# Ordena por combustível crescente
+def bubble_sort(lista):
+    """espaconaves com menos combustivel sobem para o inicio da fila"""
+    lst = lista[:]
+    for i in range(len(lst) - 1):
+        for j in range(len(lst) - 1 - i):
+            if lst[j]["comb"] > lst[j+1]["comb"]:
+                lst[j], lst[j+1] = lst[j+1], lst[j]
+    return lst
+
+
+# Ordena por prioridade crescente
+def selection_sort(lista):
+    """espaconaves com prioridade 1 (mais urgente) ficam no topo da fila"""
+    lst = lista[:]
+    for i in range(len(lst)):
+        menor = min(range(i, len(lst)), key=lambda j: lst[j]["prior"])
+        lst[i], lst[menor] = lst[menor], lst[i]
+    return lst
+
+
+# Pilha de emergencia
+def push_emergencia(av):
+    emergencia.append(av)
+    print(f" [!] EMERGENCIA: {av['cod']} empilhada")
+
+    def pop_emergencia():
+        return emergencia.pop() if emergencia else None
+    
+
+# Exibicao
+def exibir(lista, titulo):
+    print(f"\n{'─'*55}\n  {titulo}\n{'─'*55}")
+    for av in lista:
+        s = "Correto" if av["ok"] else "Esperando"
+        print(f"  {s} {av['cod']:6} | {av['tipo']:12} | comb:{av['comb']:3}% "
+              f"| prior:{av['prior']} | CO₂:{av['co2']:.0f}kg")
