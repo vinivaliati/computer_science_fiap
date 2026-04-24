@@ -1,5 +1,5 @@
 """
-MGPEB - Modulo De Gerenciamento de Pousos
+MGPEB - Modulo De Gerenciamento de pouso da Nave Aurora Siger
 """
 
 # Estruturas Lineares, Lista Geral, Fila de espera e pilha de emergencia
@@ -7,8 +7,13 @@ modulos    = []   # lista geral de todos os modulos cadastrados
 fila_pouso = []   # fila de pouso FIFO (ordem de chegada a órbita)
 pilha_emer = []   # pilha de emergência LIFO (modulos criticos primeiro)
 
+# Listas auxiliares de status pos autorizacao
+pousados  = []
+em_espera = []
+em_alerta = []
+
 # Cadastro dos modulos
-def cadastrar(nome, tipo, prioridade, combustivel, massa_ton, criticidade, horario_orbita):
+def cadastrar(nome, tipo, prioridade, combustivel, massa_ton, criticidade, horario_orbita, sensores_ok=True, atmosfera_ok=True):
     """Cadastra um modulo da espaçonave e insere na lista e na fila
 
         Atributos:
@@ -19,18 +24,22 @@ def cadastrar(nome, tipo, prioridade, combustivel, massa_ton, criticidade, horar
         massa_ton (float): massa do modulo em toneladas(ton)
         criticidade (str): "alta", "media" ou "baixa"
         horario_orbita (str): horario estimado de chegada a orbita (ex: 10:50)
+        sensores_ok (bool): integridade dos sensores de navegacao
+        atmosfera_ok (bool): condicao atmosferica simula favoravel ao pouso
 
     """
 
 mod = {
-       "nome":   nome,
-       "tipo":   tipo,
-       "prior":  prioridade,
-       "comb":   combustivel,
-       "massa":  massa_ton,
-       "critic": criticidade,
-       "orbita": horario_orbita,
-       "ok":     False  # Sera definido pela logica de autorizacao
+        "nome":   nome,
+        "tipo":   tipo,
+        "prior":  prioridade,
+        "comb":   combustivel,
+        "massa":  massa_ton,
+        "critic": criticidade,
+        "orbita": horario_orbita,
+        "sensores": sensores_ok,
+        "atmosfera": atmosfera_ok,
+        "ok":     False  # Sera definido pela logica de autorizacao
 
    }
 modulos.append(mod)
@@ -144,3 +153,4 @@ if __name__ == "__main__":
 # Atributos: nome, tipo, prioridade, combustivel(%), massa(toneladas (t), criticidade, horario_orbita
 print("\n[1] CADASTRO DOS MODULOS")
 cadastrar("MOD-HAB-01,")
+
