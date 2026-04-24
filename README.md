@@ -43,10 +43,13 @@
     │   ├── codes/
     │   ├── referencias/
     │   ├── relatorio.pdf
+    │   ├── aurora_singer.ipynb
     │   └── requirements.txt
     ├── fase2/
     │   ├── codes/
     │   ├── referencias/
+    │   ├── aurora_singer_fase2.ipynb
+    │   ├── code.py
     │   └── relatorio.pdf
     ├── fase3/
     ├── fase4/
