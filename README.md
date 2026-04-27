@@ -26,23 +26,36 @@
 ![Seaborn](https://img.shields.io/badge/Seaborn-4c72b0?style=flat)
 ![scikit-learn](https://img.shields.io/badge/scikit--learn-f7931e?style=flat)
 
+#### Fase 2
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white)
+![Algoritmos](https://img.shields.io/badge/Algoritmos-Bubble%20Sort%20%7C%20Busca%20Linear-blue)
+![Lógica Booleana](https://img.shields.io/badge/Lógica-AND%20%7C%20OR%20%7C%20NOT-green)
+![Matemática](https://img.shields.io/badge/Modelagem-Exponencial-orange)
+
 ---
 
 ## Estrutura do Repositório
 
 ```
-computer_science_fiap/
-├── fase1/
-│   ├── codes/
-│   ├── referencias/
-│   ├── relatorio.pdf
-│   └── requirements.txt
-├── fase2/
-├── fase3/
-├── fase4/
-├── fase5/
-├── fase6/
-└── fase7/
+
+    computer_science_fiap/
+    ├── fase1/
+    │   ├── codes/
+    │   ├── referencias/
+    │   ├── relatorio.pdf
+    │   ├── aurora_singer.ipynb
+    │   └── requirements.txt
+    ├── fase2/
+    │   ├── codes/
+    │   ├── referencias/
+    │   ├── aurora_singer_fase2.ipynb
+    │   ├── code.py
+    │   └── relatorio.pdf
+    ├── fase3/
+    ├── fase4/
+    ├── fase5/
+    ├── fase6/
+    └── fase7/
 ```
 
 ---
@@ -62,10 +75,29 @@ Análise de **10000 leituras de telemetria** do sistema pré-decolagem da espaç
 
 ---
 
-### 🚧 Fase 2 — *Em breve*
-*(WIP)*
 
-📄 [Acessar README da Fase 2](./fase-2/README.md)
+### ✅ Fase 2 — Gerenciamento de Pouso (MGPEB)
+
+[Acessar README da Fase 2](./fase2/README.md)
+
+[Acessar Relatório da Fase 2](./fase2/relatorio.pdf)
+
+Desenvolvimento de um **Módulo de Gerenciamento de Pouso e Estabilização de Base (MGPEB)** para a missão **Aurora Siger**, simulando a tomada de decisão em um ambiente crítico.
+
+O projeto inclui:
+
+- Modelagem de módulos de pouso e fila (FIFO)  
+- Aplicação de **lógica booleana (AND, OR, NOT)** para decisões  
+- Implementação de **busca linear** (menor combustível, maior prioridade)  
+- Ordenação com **Bubble Sort** em cenários críticos  
+- Simulação de estados:
+  - POUSADO  
+  - ESPERA  
+  - ALERTA  
+- Modelagem matemática do consumo de combustível (função exponencial)  
+- Integração com conceitos de **ESG e governança**
+
+![grafico_combustivel](fase2/Referencias/img/grafico_combustivel.png)
 
 ---
 
