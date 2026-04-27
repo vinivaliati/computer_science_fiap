@@ -266,9 +266,8 @@ exibir(em_alerta, "MODULOS EM ALERTA (bloqueados)")
 print("\n[6] RELATORIO ESG")
 relatorio_esg()
  
-    # ── 7. FUNÇÃO MATEMÁTICA — SIMULAÇÃO DE DESCIDA ──────────────────────────
-    # h(t) = h0 - v * t  →  função linear decrescente
-    # Auxilia a engenharia a definir o momento exato de acionar retrofoguetes
+    # FUNÇÃO MATEMATICA
+    # h(t) = h0 - v * t  | função linear decrescente
 print("\n[7] MODELAGEM MATEMÁTICA — ALTURA DE DESCIDA")
 simular_descida("MOD-MED-01", h0=120, v=0.5)
  
