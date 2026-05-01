@@ -1,8 +1,3 @@
-"""
-MGPEB - Modulo De Gerenciamento de pouso da Nave Aurora Siger
-"""
-
-# Estruturas Lineares, Lista Geral, Fila de espera e pilha de emergencia
 modulos    = []   # lista geral de todos os modulos cadastrados
 fila_pouso = []   # fila de pouso FIFO (ordem de chegada a órbita)
 pilha_emer = []   # pilha de emergência LIFO (modulos criticos primeiro)
@@ -96,7 +91,6 @@ def buscar_criticidade(nivel):
     """Busca modulos por nivel de criticidade da carga"""
     return [m for m in modulos if m["critic"] == nivel ]
 
-
 # Funcao Matematica, Altura de Descida
 # Modelo: funcao linear h(t) = h0 - v * t
 # h0 = altura inicial (km), v = velocidade media de descida (km/s), t = tempo (s)
@@ -118,7 +112,6 @@ def simular_descida(nome, h0=120, v=0.5):
         if h <= 0:
             break
 
-
 # Ordena por combustível crescente
 def bubble_sort(lista):
     """Modulos com menos combustivel sobem para o inicio da fila"""
@@ -129,7 +122,6 @@ def bubble_sort(lista):
                 lst[j], lst[j+1] = lst[j+1], lst[j]
     return lst
 
-
 # Ordena por prioridade crescente
 def selection_sort(lista):
         """Modulos com prioridade 1 (mais urgente) ficam no topo da fila"""
@@ -138,7 +130,6 @@ def selection_sort(lista):
             idx = min(range(i, len(lst)), key=lambda j: lst[j]["prior"])
             lst[i], lst[idx] = lst[idx], lst[i]
             return lst
-
 
 # Pilha de emergencia
 def push_emergencia(mod):
@@ -149,14 +140,12 @@ def push_emergencia(mod):
 def pop():
         """Desempilha o modulo mais urgente (pop)"""
         return pilha_emer.pop() if pilha_emer else None
-    
 
 # Log de autorizacao
 def log_status(mod, ok, msg):
         """Exibe o resultado da autorizacao de forma legivel"""
         status = "Ok" if ok else "Erro"
         print(f" [{mod['nome']}] {status} - {msg}")
-
 
 # Exibicao
 def exibir(lista, titulo):
@@ -166,7 +155,6 @@ def exibir(lista, titulo):
         print(f"  {s} {m['nome']:14} | {m['tipo']:12} | comb:{m['comb']:3}% "
               f"| prior:{m['prior']} | {m['massa']:5.1f}t | critic:{m['critic']:5} | {m['orbita']}")
         
-
 # Relatorio ESG
 def relatorio_esg():
     """E = ambiental, S = social, G = governanca"""
@@ -180,7 +168,6 @@ def relatorio_esg():
     print(f" [G] Autorizados: {aprov}/{len(modulos)}")
     f"({aprov}/{len(modulos)})"
     print(f"{'=' * 62}")
-
 
 # Programa principal
 if __name__ == "__main__":
@@ -205,13 +192,11 @@ if __name__ == "__main__":
     
     exibir(fila_pouso, "FILA INICIAL! ordem de chegada a orbita")
 
-
     # Pilha de  emergencia
 print("\n[2] PILHA DE EMERGENCIA (combustivel ≤ 15%)")
 for m in modulos:
     if m["comb"] <= 15:
         push_emergencia(m)
-
 
 # Busca
 print("\n[3] BUSCA NAS ESTRUTURAS")
@@ -220,16 +205,13 @@ print("  Criticidade alta:", [m["nome"] for m in buscar_criticidade("alta")])
 crit = menor_combustivel()
 print(f"  Menor combustível: {crit['nome']} ({crit['comb']}%)")
 
-
 # Ordenacao
 print("\n[4] ORDENAÇAO DA FILA")
 exibir(bubble_sort(fila_pouso),    "Bubble Sort por combustivel (mais critico primeiro)")
 exibir(selection_sort(fila_pouso), "Selection Sort por prioridade (mais urgente primeiro)")
 
-
 # Autorizacao de pouso
 print("\n[5] AUTORIZACAO DE POUSO")
-
 
 # Emergencias primeiro, pilha LIFO
 print(" Atendendo pilha de emergencia: ")
@@ -239,7 +221,6 @@ while pilha_emer:
     m["ok"] = ok
     pousados.append(m) if ok else em_alerta.append(m)
     log_status(m, ok, msg)
-
 
 # Fila ordenada prioridadade
 print("  >> Processando fila por prioridade:")
@@ -261,14 +242,13 @@ exibir(pousados,  "MODULOS POUSADOS COM SUCESSO")
 exibir(em_espera, "MODULOS EM ESPERA (fila)")
 exibir(em_alerta, "MODULOS EM ALERTA (bloqueados)")
 
-
 # Relatorio ESG
 print("\n[6] RELATORIO ESG")
 relatorio_esg()
  
-    # FUNÇÃO MATEMATICA
-    # h(t) = h0 - v * t  | função linear decrescente
-print("\n[7] MODELAGEM MATEMÁTICA — ALTURA DE DESCIDA")
+# FUNÇÃO MATEMATICA
+# h(t) = h0 - v * t  | função linear decrescente
+print("\n[7] MODELAGEM MATEMÁTICA ALTURA DE DESCIDA")
 simular_descida("MOD-MED-01", h0=120, v=0.5)
  
-print("\n  Missao Aurora Siger concluida. Bem-vindos a Marte\n")
+print("\n  Missao Aurora Siger concluida. Bem vindos a Marte \n")
